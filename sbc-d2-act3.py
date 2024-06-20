@@ -13,7 +13,7 @@ Ltnum = random.randint(0, 9)
 mylist = first,second,third
 lotolist = Lfnum,Lsnum,Ltnum
 
-print(f"your number are: ",mylist)
+print("your number are: ",mylist)
 print("And the Result are:",lotolist)
 
 

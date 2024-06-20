@@ -24,7 +24,7 @@ if me == 0 and c2 == 1 and c3 == 1 or me == 1 and c2 == 0 and c3 == 0 :
 elif me == 1 and c2 == 0 and c3 == 1 or me == 0 and c2 == 1 and c3 == 0:
     print("c2 win")
 elif me == 1 and c2 == 1 and c3 == 0 or me == 0 and c2 == 0 and c3 == 1:
-    print("c2 win")
+    print("c3 win")
 else:
     print("draw")
     
