@@ -23,7 +23,7 @@ elif (
     first in {Lfnum, Lsnum, Ltnum} and
     second in {Lfnum, Lsnum, Ltnum} and
     third in {Lfnum, Lsnum, Ltnum} and
-    len({first, second, third}) == 3  
+    len({first, second, third}) == lotolist.__len__  
 ):
     print("you partially win some rewards")
 else:

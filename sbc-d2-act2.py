@@ -1,6 +1,6 @@
 from random import randint
 
-me = int(input("enter o hayang to  1 kulob: "))
+me = int(input("ENTER 0 for HAYANG or 1 for KULOB: "))
 c2 = randint(0,1)
 c3 = randint(0,1)
 
