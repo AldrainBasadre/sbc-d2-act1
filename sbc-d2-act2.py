@@ -1,30 +1,28 @@
 from random import randint
+while True:
+    def get_choice_name(choice):
+        return "kulob" if choice else "hayang"
 
-me = int(input("ENTER 0 for HAYANG or 1 for KULOB: "))
-c2 = randint(0,1)
-c3 = randint(0,1)
+    me = int(input("ENTER 0 for HAYANG or 1 for KULOB: "))
+    c2,c3 = randint(0,1),randint(0,1)
 
-if me == 1:
-    print("Me:kulob")
-elif me == 0:
-    print("Me:hayang")
-if c2 == 1:
-    print("C2:kulob")
-elif c2 == 0:
-    print("C2:hayang")
-if c3 == 1:
-    print("C3:kulob")
-elif c3 == 0:
-    print("C3:hayang")
-    
+    choices = [me, c2, c3]
+    names = ["Me", "C2", "C3"]
+
+    for name, choice in zip(names, choices):
+        print(f"{name}: {get_choice_name(choice)}")
 
 
-if me == 0 and c2 == 1 and c3 == 1 or me == 1 and c2 == 0 and c3 == 0 :
-    print("you win")
-elif me == 1 and c2 == 0 and c3 == 1 or me == 0 and c2 == 1 and c3 == 0:
-    print("c2 win")
-elif me == 1 and c2 == 1 and c3 == 0 or me == 0 and c2 == 0 and c3 == 1:
-    print("c3 win")
-else:
-    print("draw")
-    
+    if me != c2 and me != c3:
+        print("you win")
+    elif c2 != me and c2 != c3:
+        print("c2 win")
+    elif c3 != me and c3 != c2:
+        print("c3 win")
+    else:
+        print("draw")
+    again = input("Wanna Play again? (yes/no): ").strip()
+    if again != 'yes':
+        break
+
+print("Thank you for playing!")
